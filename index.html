@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="ko" >
+  <head>
+    <meta charset="utf-8">
+    <title>화방넷</title>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src = "js/01.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+      <!--[if lt IE 9]>
+       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body style="overflow-x:hidden">
+   <nav id="side">
+     
+     <form action="" method="post" name="login_frm">
+      <fieldset>
+       <legend>로그인</legend>
+       <div class="log">
+            <img src="images/side-01.png" alt="">
+            <ul><!--로그인-->
+               <li><label for="userid"></label>
+               <input type="text" id="txt1" name="id" placeholder="ID"></li>
+               
+               <li><label for="userpwd"></label>
+               <input type="password" id="txt2" name="pwd" placeholder="password" ></li>
+            </ul>
+             
+            <ul class="login">
+              <li class="btn"><a href="#a" onclick="cheak()">로그인</a></li>
+              <li class="btn"><a href="#a" onclick="cheak()">회원가입</a></li>
+            </ul>
+            
+            <ul>
+              <li class="dis"><a href="#a">신규가입시<br>2000원할인</a></li>
+            </ul>
+            
+             <a class="navbtn"><img src="images/sidebar-btn.png" alt=""></a>
+          </div>
+          
+         </fieldset>
+        </form>
+        
+        
+         
+        <div class="cs">
+            <img src="images/side-02.png" alt="">
+            <h3>고객상담센터</h3>
+            <p>02.924.0099</p>
+            <p>평일 영업시간:09:00-17:30</p>
+            <p>주말 영업시간:09:00-12:00</p>
+            <p>점심시간:13:00-14:00</p>
+        </div>
+        
+        <div class="account-side">
+            <h3>입금계좌안내</h3>
+            <p>(주)미술넷커뮤니케이션</p>
+            <p>국민은행 016701-04-015381</p>
+            <p>기업은행 511-000724-04-013</p>
+            <p>농협은행 317-0002-2286-31</p>
+        </div>
+        
+        <div class="return-side">
+            <p>반품보내실주소<br>
+            서울시 성북구 동선동4가 239번지 5층</p>
+        </div>
+   </nav>
+   
+   
+   
+   
+   <div class="header">
+      <div class="header_top">
+        <div class="header-top_inner">
+       <ul class="left">
+         <li><a href="#"> <img src="images/sns_01.png" alt="kakao"> </a></li>
+         <li><a href="#"> <img src="images/sns_02.png" alt="face"> </a></li>
+         <li><a href="#"> <img src="images/sns_03.png" alt="insta"> </a></li>
+       </ul>
+       <ul class="right">
+         <li><a href="#">로그인</a></li>
+         <li><a href="#">회원가입</a></li>
+         <li><a href="#">장바구니</a></li>
+       </ul>
+    </div>
+     <form action="#" method="get" name="hSreFrm">
+<!--
+          <div class="schBtn">
+            <span>
+            <img src="images/util_hSrchBt.png" alt="search">
+            </span>
+           </div>//schBtn
+-->
+                   <!--검색(돋보기) 클릭시 나타는 창 시작-->
+           <div class="hide_sch">
+              <input type="text" name="hSrc" placeholder="">
+              <img src="images/srchBt.png" alt="">
+              <img class="sch_close" src="images/util_hSrch_xBt.png" alt="">
+           </div><!--//side_sch-->
+                   <!--검색(돋보기) 클릭시 나타는 창 끝-->
+         </form>
+   </div>
+
+     <div class="header_middle">
+       <div class="header-middle_inner">
+        <ul>
+          <li class="pen"><a href="#"><img src="images/eagle_on.png" alt=""></a></li>
+          <li class="logo"><a href="#"><img src="images/main_logo.jpg" alt="화방넷로고"></a></li>
+          <li class="person"><a href="#"><img src="images/top_01.jpg" alt=""></a></li>
+        </ul>
+      </div>
+     </div>
+
+     <div class="header_bottom">
+      <div class="header-bottom_inner">
+       <div class="header-sub">
+<!--        <a class="navbtn"><img src="images/h_menu.png" alt=""></a>-->
+<!--        <img class="h_menu" src="images/h_menu.png" alt=""><a class="navbtn"></a>-->
+        
+        <div class="imgswap" > 
+        <img src="images/h_menu.png"> 
+        <img src="images/h_menu2.png"> 
+        </div>
+      
+       <ul class="sub">
+
+        
+         <li class="title"> <a href="#">미술용품</a>
+             <ul class="sub-menu">
+<!--                <li class="border"><a href="#a"></a></li>-->
+                <li><a href="#a">수채화용품</a></li>
+                <li><a href="#a">유화용품</a></li>
+                <li><a href="#a">아크릴용품</a></li>
+                <li><a href="#a">포스터칼라/디자인</a></li>
+                <li><a href="#a">마카/라이너/스프레이</a></li>
+                <li><a href="#a">색연필/소묘연필</a></li>
+                <li><a href="#a">콘테/파스텔/목탄</a></li>
+                <li><a href="#a">만화용품/타블렛</a></li>
+                <li><a href="#a">조소/판화용품</a></li>
+                <li><a href="#a">동양화용품</a></li>
+                <li><a href="#a">서예/캘리그라피</a></li>
+                <li><a href="#a">미술 보조용품</a></li>
+                <li><a href="#a">지류/스케치북</a></li>
+                <li><a href="#a">캔버스/판넬</a></li>
+                <li><a href="#a">붓 전용관</a></li>
+                <li><a href="#a">석고상 제품</a></li>
+                <li><a href="#a">세트할인상품</a></li>
+                <li><a href="#a">아동문구/미술용품</a></li>
+             </ul>
+          </li>
+         <li class="title"> <a href="#">공예제품</a>
+           <ul class="sub-menu">
+               <li><a href="#">공예/핸드페인팅</a></li>
+                <li><a href="#">우드락/폼보드</a></li>
+                <li><a href="#">미니어쳐/모형재료</a></li>
+                <li><a href="#">축소모형</a></li>
+                <li><a href="#">에어브러쉬</a></li>
+           </ul>
+         </li>
+         <li class="title"> <a href="#">문구/제도</a>
+            <ul class="sub-menu">
+                <li><a href="#">문구/사무용품</a></li>
+                <li><a href="#">필기용품</a></li>
+                <li><a href="#">제도판/제도용품</a></li>
+            </ul>
+         </li>
+         <li class="title"> <a href="#">교재/서적</a>
+           <ul class="sub-menu">
+               <li><a href="#">미술교재</a></li>
+                <li><a href="#">미술서적</a></li>
+                <li><a href="#">컬러링북</a></li>
+                <li><a href="#">팬톤/DIC/칼라가이드</a></li>
+           </ul>
+         </li>
+         <li class="title"> <a href="#">이젤/보드</a>
+           <ul class="sub-menu">
+               <li><a href="#">이젤상품</a></li>
+                <li><a href="#">이젤대여</a></li>
+                <li><a href="#">보드/칠판/게시판</a></li>
+           </ul>
+         </li>
+         <li class="title"> <a href="#">기타용품</a>
+          <ul class="sub-menu">
+              <li><a href="#">아트샵/선물용</a></li>
+                <li><a href="#">판촉물/기념품</a></li>
+                <li><a href="#">생활용품/공구용품</a></li>
+                <li><a href="#">프린터/복합기</a></li>
+                <li><a href="#">브랜드샵</a></li>
+                <li><a href="#">AnB전용관</a></li>
+          </ul>
+         </li>
+         <li class="title"> <a href="#">커뮤니티</a>
+            <ul class="sub-menu">
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">동영상강의</a></li>
+                <li><a href="#">리뷰</a></li>
+                <li><a href="#">Q&A</a></li>
+                <li><a href="#">자주묻는질문</a></li>
+                <li><a href="#">이벤트</a></li>
+            </ul>
+         </li>
+         <li class="title"> <a href="#">미술소식</a>
+           <ul class="sub-menu">
+                <li><a href="#">전시회</a></li>
+                <li><a href="#">실기대회/공모전</a></li>
+                <li><a href="#">미술 묻고답하기</a></li>
+                <li><a href="#">강사 구인/구직</a></li>
+           </ul>
+         </li>
+       </ul>
+<!--       </div>-->
+
+       <div class="category">
+         <ul>
+           <li class="list01">
+             <a href="#a"><b>미술용품</b></a>
+              <div class="category01">
+               <ul class="categorylist01">
+                <li><a href="#a">수채화용품</a></li>
+                <li><a href="#a">유화용품</a></li>
+                <li><a href="#a">아크릴용품</a></li>
+                <li><a href="#a">포스터칼라/디자인</a></li>
+                <li><a href="#a">마카/라이너/스프레이</a></li>
+                <li><a href="#a">색연필/소묘연필</a></li>
+                <li><a href="#a">콘테/파스텔/목탄</a></li>
+                <li><a href="#a">만화용품/타블렛</a></li>
+                <li><a href="#a">조소/판화용품</a></li>
+                <li><a href="#a">동양화용품</a></li>
+                <li><a href="#a">서예/캘리그라피</a></li>
+                <li><a href="#a">미술 보조용품</a></li>
+                <li><a href="#a">지류/스케치북</a></li>
+                <li><a href="#a">캔버스/판넬</a></li>
+                <li><a href="#a">붓 전용관</a></li>
+                <li><a href="#a">석고상 제품</a></li>
+                <li><a href="#a">세트할인상품</a></li>
+                <li><a href="#a">아동문구/미술용품</a></li>
+              </ul>
+            </div>
+          </li>
+          
+          <li class="list02">
+            <div class="category02">
+              <a href="#"><b>공예용품</b></a>
+              <ul class="categorylist02">
+                <li><a href="#">공예/핸드페인팅</a></li>
+                <li><a href="#">우드락/폼보드</a></li>
+                <li><a href="#">미니어쳐/모형재료</a></li>
+                <li><a href="#">축소모형</a></li>
+                <li><a href="#">에어브러쉬</a></li>
+              </ul>
+            </div>
+            <div class="category03">
+              <a href="#"><b>기타용품</b></a>
+              <ul class="categorylist03">
+                <li><a href="#">아트샵/선물용</a></li>
+                <li><a href="#">판촉물/기념품</a></li>
+                <li><a href="#">생활용품/공구용품</a></li>
+                <li><a href="#">프린터/복합기</a></li>
+                <li><a href="#">브랜드샵</a></li>
+                <li><a href="#">AnB전용관</a></li>
+              </ul>
+            </div>
+          </li>
+          
+          <li class="list03">
+            <a href="#"><b>문구/제도</b></a>
+            <div class="category04">
+              <ul class="categorylist04">
+                <li><a href="#">문구/사무용품</a></li>
+                <li><a href="#">필기용품</a></li>
+                <li><a href="#">제도판/제도용품</a></li>
+              </ul>
+             </div>
+            <div class="category05">
+              <a href="#"><b>커뮤니티</b></a>
+              <ul class="categorylist05">
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">동영상강의</a></li>
+                <li><a href="#">리뷰</a></li>
+                <li><a href="#">Q&A</a></li>
+                <li><a href="#">자주묻는질문</a></li>
+                <li><a href="#">이벤트</a></li>
+              </ul>
+            </div>
+          </li>
+          
+          
+          <li class="list04">
+            <a href="#"><b>교재/서적</b></a>
+            <div class="category06">
+              <ul class="categorylist06">
+                <li><a href="#">미술교재</a></li>
+                <li><a href="#">미술서적</a></li>
+                <li><a href="#">컬러링북</a></li>
+                <li><a href="#">팬톤/DIC/칼라가이드</a></li>
+              </ul>
+             </div>
+            <div class="category07">
+            <a href="#"><b>미술소식</b></a>
+              <ul class="categorylist07">
+                <li><a href="#">전시회</a></li>
+                <li><a href="#">실기대회/공모전</a></li>
+                <li><a href="#">미술 묻고답하기</a></li>
+                <li><a href="#">강사 구인/구직</a></li>
+              </ul>
+            </div>
+          </li>
+          
+          <li class="list05">
+            <a href="#"><b>이젤/보드</b></a>
+            <div class="category08">
+              <ul class="categorylist08">
+                <li><a href="#">이젤상품</a></li>
+                <li><a href="#">이젤대여</a></li>
+                <li><a href="#">보드/칠판/게시판</a></li>
+              </ul>
+             </div>
+           </li>
+           
+       </ul>
+     </div>
+     </div>
+      </div>
+  </div>
+</div>
+
+     <div class="banner">
+     
+      <div class="slider">
+       <ul class="list">
+         <li><img src="images/slider_01.png" alt=""></li>
+         <li><img src="images/banner02.jpg" alt=""></li>
+         <li><img src="images/banner03.jpg" alt=""></li>
+       </ul>
+     </div>
+      
+       <a href="#"><img class="icons-left" src="images/s_licon.png" alt=""></a>
+       <a href="#"><img class="icons-right" src="images/s_ricon.png" alt=""></a>
+<!--       <a href="#"><img class="sidem" src="images/sidemenu.png" alt=""></a>-->
+     </div>
+
+   <div class="container">
+     <img src="images/acc_02.png" alt="">
+     
+     <div class="container_top">
+     <img src="images/acc_01.png" alt="">
+      
+      <div class="exh">
+       <h2>EXHIBITION</h2>
+       <p> <a href="#"> 더보기 ></a></p>
+       <div class="img_box">
+         <a href="#"><img class="exh_01" src="images/exh_01.jpg" alt=""></a>
+         <a href="#"><img class="exh_02" src="images/exh_02.jpg" alt=""></a>
+         <a href="#"><img class="exh_03" src="images/exh_03.jpg" alt=""></a>
+         <a href="#"><img class="exh_04" src="images/exh_04.jpg" alt=""></a>
+       </div>
+       </div>
+      </div>
+
+     <div class="container_best">
+       <h2>BEST</h2>
+         <div class="best">
+           <ul>
+             <li>
+               <div class="best_mainimg">
+                  <a href="detail/index.html">
+                  <img src="images/img01.png" alt=""></a> 
+                  <p>[몽마르아트]<br>전문가용 수채화물감</p>
+                  <span class="price">120,000원</span>
+                  <span class="sale">69000원</span>
+                </div>
+             </li>
+             <li>
+                <div class="best_mainimg">
+                  <img src="images/img02.jpg" alt="">
+                  <p>[프리즈마]<br>유성색연필</p>
+                  <span class="price">24,400원</span>
+                  <span class="sale">12,500원</span>
+                </div>
+             </li>
+             <li>
+                <div class="best_mainimg">
+                  <img src="images/img03.jpg" alt="">
+                  <p>[몽마르아트]<br>원터치 오픈형 액자</p>
+                  <span class="price">35,000원</span>
+                  <span class="sale">18,500원 </span>
+                </div>
+             </li>
+             <li>
+                <div class="best_mainimg">
+                  <img src="images/img04.jpg" alt="">
+                  <p>[몽마르아트]<br>anb 원터치 액자 절사이즈</p>
+                  <span class="price">24,000원</span>
+                  <span class="sale">21,600원</span>
+                </div>
+             </li>
+             <li>
+                <div class="best_mainimg">
+                  <img src="images/img05.jpg" alt="">
+                  <p>[몽마르아트]<br>학생용 포스터물감</p>
+                  <span class="price">8000원</span>
+                  <span class="sale">5,500원</span>
+                </div>
+             </li>
+             <li>
+                <div class="best_mainimg">
+                  <img src="images/img06.jpg" alt="">
+                  <p>[파버카스텔]<br>수채색연필 틴케이스</p>
+                  <span class="price">95000원</span>
+                  <span class="sale">6650원</span>
+                </div>
+             </li>
+             <li>
+                <div class="best_mainimg">
+                  <img src="images/img07.jpg" alt="">
+                  <p>[카멜레온]<br>그라데이션 마카 </p>
+                  <span class="price">40000원</span>
+                  <span class="sale">22,400원</span>
+                </div>
+             </li>
+             <li>
+                <div class="best_mainimg">
+                  <img src="images/img08.png" alt="">
+                  <p>[몽마르아트]<br>스케치북낱개</p>
+                  <span class="price">1000원</span>
+                  <span class="sale">700원</span>
+                </div>
+             </li>
+           </ul>
+
+         </div>
+        </div>
+
+
+     <div class="container_bottom">
+       <h2 >NEW ARRIVAR</h2>
+         <div class="NEW">
+           <ul>
+             <li>
+                <div class="new_mainimg">
+                  <img src="images/img11.jpg" alt="">
+                  <p>[샤쿠라 코이]<br>워터칼라 고체물감</p>
+                  <span class="price">24,000원</span>
+                  <span class="sale">16,800원</span>
+                </div>
+             </li>
+             <li>
+                <div class="new_mainimg">
+                  <img src="images/img10.jpg" alt="">
+                  <p>[몽마르아트]<br>전문가용 수채화물감 낱색 15ml</p>
+                  <span class="price">7,600원</span>
+                  <span class="sale">4,800원</span>
+                </div>
+             </li>
+             <li>
+                <div class="new_mainimg">
+                  <img src="images/img09.jpg" alt="">
+                  <p>[프리즈마]<em>한정판</em> <br>유성색연필 언더 더 씨</p>
+                  <span class="price">27,000원</span>
+                  <span class="sale">13,000원 </span>
+                </div>
+             </li>
+             <li>
+                <div class="new_mainimg">
+                  <img src="images/img12.jpg" alt="">
+                  <p>[프리즈마]<em>한정판</em><br>유성색연필 보태니컬 가든</p>
+                  <span class="price">24,000원</span>
+                  <span class="sale">21,600원</span>
+                </div>
+             </li>
+             <li>
+                <div class="new_mainimg">
+                  <img src="images/img13.jpg" alt="">
+                  <p>[프리즈마]<em>한정판</em><br>유성색연필 하이라이팅 & 쉐이딩</p>
+                  <span class="price">53,000원</span>
+                  <span class="sale">25,000원</span>
+                </div>
+             </li>
+             <li>
+                <div class="new_mainimg">
+                  <img src="images/img14.jpg" alt="">
+                  <p>[홍일]<br>디스플레이 스케칭 야외이젤 小</p>
+                  <span class="price">30,000원</span>
+                  <span class="sale">21,900원</span>
+                </div>
+             </li>
+             <li>
+                <div class="new_mainimg">
+                  <img src="images/img15.jpg" alt="">
+                  <p>[문교]<br>처음배우는 오일파스텔 </p>
+                  <span class="price">17,000원</span>
+                  <span class="sale">15,300원</span>
+                </div>
+             </li>
+             <li>
+                <div class="new_mainimg">
+                  <img src="images/img16.jpg" alt="">
+                  <p>처음배우는 오일파스텔<br>+문교아티스트 오일파스텔</p>
+                  <span class="price">20,200원</span>
+                </div>
+             </li>
+           </ul>
+
+         </div>
+     </div>
+    </div>
+
+
+     <footer>
+       <div class="footer_wrap">
+        <div class="section1">
+          <div class="inner">
+          <ul>
+            <li><a href="#">홈</a></li>
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보취급</a></li>
+            <li class="last"><a href="#">사업자정보확인</a></li>
+          </ul>
+        </div>
+      </div>
+
+        <div class="section2">
+         <div class="inner">
+          <ul>
+            <li class="customer">
+             <h1>02.924.0099</h1>
+             <p>상담시간:09:00~17:30</p>
+             <p>(토요일 09:00~12:00)</p>
+             <p>공휴일휴무</p>
+            </li>
+             <li class="account">
+             <h3>입금계좌안내</h3>
+             <p>국민 016701-04-015381</p>
+             <p>기업 551-00724-04-013</p>
+             <p>농협 317-0002-2286-31</p>
+             <p>(주)미술넷커뮤니케이션</p>
+            </li>
+             <li class="quick">
+              <h3>빠른메뉴</h3>
+              <p><a href="#a">로스인/회원가입</a></p>
+              <p><a href="#a">관심상품</a></p>
+              <p><a href="#a">장바구니</a></p>
+              <p><a href="#a">주문조회</a></p>
+              <p><a href="#a">마이페이지</a></p>
+            </li>
+            <li class="return">
+            <h3>반품주소지</h3>
+            <p>02829 서울특별시 성북구 동선동4가 239번지 5층<br>
+              자세한 내용은 문의란 및 공지사항을 참고해주세요)<br>
+              (타택배 반품이용을 희망하실 경우 Q&A로 문의주신후 이용바랍니다)</p>
+             </li>
+           </ul>
+        </div>
+      </div>
+
+        <div class="section3">
+          <div class="f_inner">
+            <span class="company">법인명 : (주)미술넷커뮤니케이션 | 주소지 : 02829 서울특별시 성북구 동소문로 25길 20-16<br>
+               사업자 등록번호 : 209-81-39979 | 통신판매업 신고 제2005 - 서울성북-00284호<br>
+               개인정보관리책임자 : 김견남(hwabangnet@naver.com )  |  대표자 : 김견남<br>
+               전화 : 02.924.0099  |  FAX : 02.926.0979 반품주소지 : 02829 서울특별시 성북구  동선동4가 239번지 5층<br></span>
+              <span class="copy"><em>Copyright@화방넷 All rights reserved.<br>
+                   Contect hwabangnet@naver.com for more information.</em></span>
+          </div>
+         </div>
+        </div>
+     </footer>
+        
+
+
+
+
+</body>
+</html>
